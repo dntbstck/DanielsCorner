@@ -7,7 +7,33 @@
     <title>DanielsCorner</title>
   </head>
   <body>
-    <nav>
+    <div class="container">
+      <nav>
+        <div class="logo__container">
+        <h1 class="logo__title"><a href="https://www.instagram.com/wwmkeith">daniel's corner</a></h1>
+      <div class="ul__circle__title tooltip pulse"><span class="tooltiptext" style="font-size: small;">Connected</span></div>
+        </div>
+        <ul class="nav__right">
+          <li><a href="#">music</a></li>
+          <li><div class="ul__circle "></div></li>
+          <li><a href="#">design</a></li>
+          <li><div class="ul__circle "></div></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </nav>
+      <!-- <aside>sidebar</aside> -->
+      <main>
+        <section class="presentation__container">
+          <div>
+          <h1 class="presentation" style="font-weight: 500;">hi i'm <span style="font-weight: bold; text-shadow: rgb(255, 128, 0) 0 0 1rem; color: rgb(0, 0, 0);">daniel</span>, <br> welcome to my corner on the internet !</h1>
+        <p style="height: 1rem;">i'm a <span id="auto-type"></span></p>
+        </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- <nav>
+      <span style="font-size: small">↘</span>
       <a href="#">Looking to hire? <span style="font-size: small">↘</span></a>
       <ul class="nav__right">
         <li><a href="#">music</a></li>
@@ -20,6 +46,22 @@
     <section>
       <h1>Daniel Fortuné</h1>
       <p>multi-disciplinary kid</p>
-    </section>
+    </section> -->
+    
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#auto-type', {
+      strings: ['multi-disciplinary kid','music producer','singer', 'developper', 'designer.'],
+      typeSpeed: 40,
+      backSpeed: 20,
+      loop: true,
+      showCursor: false
+    });
+  </script>
+    
   </body>
 </html>
