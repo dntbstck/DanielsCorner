@@ -24,7 +24,6 @@ font-family: "Helvetica Light", sans-serif; */
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  user-select: none;
   cursor: none;
   background-color: var(--background-color);
 }
@@ -75,6 +74,9 @@ body.fade-out {
 }
 
 @media (max-width: 992px) {
+  *{
+    cursor: cell;
+  }
   .cursor,
   .circle {
     visibility: hidden;
