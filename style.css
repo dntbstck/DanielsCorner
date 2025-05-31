@@ -74,6 +74,13 @@ body.fade-out {
   z-index: 10000;
 }
 
+@media (max-width: 992px) {
+  .cursor,
+  .circle {
+    visibility: hidden;
+  }
+}
+
 /* #main{
   height: 1.5rem;
   width: 1.5rem;
