@@ -1,0 +1,82 @@
+@import url("https://fonts.cdnfonts.com/css/poe-vetica-new");
+
+/* font-family: "POE Vetica New", sans-serif;
+font-family: "POE Vetica New Condensed", sans-serif; */
+
+@import url("https://fonts.cdnfonts.com/css/helvetica-255");
+
+/* font-family: "Helvetica", sans-serif;
+font-family: "Helvetica Light", sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #fafafa;
+  --white: #252323;
+  --dropshadow-hover: #d71c1c;
+  --black: rgb(24, 23, 23);
+  --grey: #a6a6a6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  /* background-color: blue; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: absolute;
+  width: 100vw;
+  height: 5vh;
+  background-color: white;
+  filter: drop-shadow(0px 0.5px 1px rgb(204, 204, 204));
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.ul__circle {
+  column-gap: 0rem;
+  color: var(--grey);
+}
+
+li {
+  color: var(--grey);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
