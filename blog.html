@@ -15,11 +15,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <script src="./index.js" defer></script>
-    <title>DanielsCorner</title>
+    <title>danielsCorner</title>
   </head>
   <body>
     <div class="trailer">
-      <div class="cursor" id="main">string="home"</div>
+      <div class="cursor" id="main">string="blog"</div>
       <!-- <i id="trailer-icon" class="fa-solid fa-music"></i>
       <i id="trailer-icon" class="fa-solid fa-swatchbook"></i>
       -->
@@ -33,56 +33,30 @@
           <!-- <span class="tooltiptext" style="font-size: small">Connected</span> -->
         </div>
       </div>
+
+      <!-- <ul class="sidenav">
+        <li><a href="./music.html" data-type="link">music</a></li>
+
+        <li><a href="./design.html" data-type="link">design</a></li>
+
+        <li>
+          <a href="./blog.html" data-type="link" class="active">blog</a>
+        </li>
+
+        <li><a href="./about.html" data-type="link">about</a></li>
+      </ul> -->
+
       <ul class="nav__right">
         <li><a href="./music.html" data-type="link">music</a></li>
         <li><div class="ul__circle"></div></li>
         <li><a href="./design.html" data-type="link">design</a></li>
         <li><div class="ul__circle"></div></li>
-        <li><a href="./blog.html" data-type="link">blog</a></li>
+        <li><a href="./blog.html" data-type="link" class="active">blog</a></li>
         <li><div class="ul__circle"></div></li>
         <li><a href="./about.html" data-type="link">about</a></li>
       </ul>
     </nav>
-    <!-- <aside>sidebar</aside> -->
-    <main>
-      <section class="presentation__container">
-        <h1 class="presentation" style="font-weight: 500">
-          hi i'm
-          <span
-            style="
-              font-weight: bold;
-              text-shadow: rgb(255, 128, 0) 0 0 2rem;
-              color: rgb(0, 0, 0);
-            "
-            >daniel</span
-          >, <br />
-          you have arrived to
-          <span
-            style="
-              font-weight: bold;
-              text-shadow: rgb(255, 128, 0) 0 0 2rem;
-              color: rgb(0, 0, 0);
-            "
-            >my corner</span
-          >
-          on the
-          <span
-            style="
-              font-weight: bold;
-              text-shadow: rgb(255, 128, 0) 0 0 2rem;
-              color: rgb(0, 0, 0);
-            "
-            >internet</span
-          >
-          !
-        </h1>
-        <p style="height: 1rem"><span id="auto-type"></span></p>
-      </section>
-    </main>
 
-    <div class="messagebox">
-      <div class="messagebox__message"></div>
-    </div>
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
@@ -90,13 +64,11 @@
     <script>
       var typed = new Typed("#auto-type", {
         strings: [
-          "i am a multi-disciplinary kid",
-          "i am a music producer",
-          "i am a singer",
-          "i am a developper",
-          "i am a designer",
-          "i am a 'ai art' hater",
-          "you can also call me keith !",
+          "multi-disciplinary kid",
+          "music producer",
+          "singer",
+          "developper",
+          "designer.",
         ],
         typeSpeed: 40,
         backSpeed: 20,

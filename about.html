@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/dansCornerFavicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <script src="./index.js" defer></script>
+    <title>danielsCorner</title>
+  </head>
+  <body>
+    <div class="trailer">
+      <div class="cursor" id="main">
+        string="about"
+      <!-- <i id="trailer-icon" class="fa-solid fa-music"></i>
+      <i id="trailer-icon" class="fa-solid fa-swatchbook"></i>
+      -->
+    </div>
+    <nav>
+      <div class="logo__container">
+        <a href="index.html"><img class="img__logo" src="./images/dansCornerFavicon.svg"/></a>
+        <div class="ul__circle__title tooltip pulse">
+          <!-- <span class="tooltiptext" style="font-size: small">Connected</span> -->
+        </div>
+      </div>
+      <ul class="nav__right">
+        <li><a href="./music.html" data-type="link" >music</a></li>
+        <li><div class="ul__circle"></div></li>
+        <li><a href="./design.html" data-type="link">design</a></li>
+        <li><div class="ul__circle"></div></li>
+        <li><a href="./blog.html" data-type="link">blog</a></li>
+        <li><div class="ul__circle"></div></li>
+        <li><a href="./about.html" data-type="link" class="active">about</a></li>
+      </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#auto-type", {
+        strings: [
+          "multi-disciplinary kid",
+          "music producer",
+          "singer",
+          "developper",
+          "designer.",
+        ],
+        typeSpeed: 40,
+        backSpeed: 20,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
+
+    <script>
+      document.body.className += " fade-out";
+
+      jQuery(function () {
+        jQuery("body").removeClass("fade-out");
+      });
+    </script>
+  </body>
+</html>
