@@ -25,6 +25,9 @@
 //     }
 // };
 
+
+// Cursor trailer script
+
 let cursorPosition = { x: 0, y: 0 };
 let isCursorMoving = false;
 let cursorMoveTimemout;
@@ -75,3 +78,4 @@ setInterval(() => {
 }, 10)
 
 
+// End Cursor trailer Script

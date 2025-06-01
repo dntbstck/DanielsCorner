@@ -15,68 +15,139 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <script src="./index.js" defer></script>
-    <title>danielsCorner</title>
+    <title>daniel's corner</title>
   </head>
-  <body>
+  <body class="container">
+    <!-- cursor trailer -->
     <div class="trailer">
-      <div class="cursor" id="main">string="music"</div>
-      <!-- <i id="trailer-icon" class="fa-solid fa-music"></i>
-      <i id="trailer-icon" class="fa-solid fa-swatchbook"></i>
-      -->
+      <div class="cursor" id="main">string="home"</div>
     </div>
+    <!-- END cursor trailer -->
+   <!-- navbar -->
+      
     <nav>
-      <div class="logo__container">
-        <a href="index.html"><img class="img__logo" src="./images/dansCornerFavicon.svg"/></a>
-        <div class="ul__circle__title tooltip pulse">
-          <!-- <span class="tooltiptext" style="font-size: small">Connected</span> -->
-        </div>
-      </div>
+      
+      
+
       <ul class="nav__right">
         <li>
-          <a href="./music.html" data-type="link" class="active">music</a>
+          <div class="nav__logo__container">
+            <a href="index.html"
+              ><img
+                class="img__logo"
+                src="./images/dansCornerFavicon.svg"
+                oncontextmenu="return false;"
+            /></a>
+            <div class="nav__circle__pulse pulse"></div>
+          </div>
         </li>
-        <li><div class="ul__circle"></div></li>
-        <li><a href="./design.html" data-type="link">design</a></li>
-        <li><div class="ul__circle"></div></li>
-        <li><a href="./blog.html" data-type="link">blog</a></li>
-        <li><div class="ul__circle"></div></li>
-        <li><a href="./about.html" data-type="link">about</a></li>
+        <li>
+          <a href="./music.html" class="nav__link active hideOnMobile" data-type="link">music</a>
+        </li>
+        <li><div class="ul__circle hideOnMobile"></div></li>
+        <li>
+          <a href="./design.html" class="nav__link hideOnMobile" data-type="link">design</a>
+        </li>
+        <li><div class="ul__circle hideOnMobile"></div></li>
+        <li>
+          <a href="./blog.html" class="nav__link hideOnMobile" data-type="link">blog</a>
+        </li>
+        <li><div class="ul__circle hideOnMobile"></div></li>
+        <li>
+          <a href="./about.html" class="nav__link hideOnMobile" data-type="link">about</a>
+        </li>
+        
+        <li class="menu__button" onclick=showSidenav()>
+          <a 
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#a6a6a6">
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>
+        </li>
       </ul>
-    </nav>
-
-    <aside>hi</aside>
-    <main>
-      <!-- un résumé de mon parcours -->
       
-      <!-- grid avec quelques sons -->
-    </main>
+    </nav>
+    <div class="sidenav">
+    <ul class="hideOnComputer sidenav__container">
+        <li onclick=hideSidenav()>
+          <a  class="sidenav__logo_a"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#a6a6a6">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a>
+        </li>
+        <li>
+          <a href="./music.html" class="nav__link active" data-type="link" style="color: rgb(255, 128, 0);">music</a>
+        </li>
+        <!-- <li><div class="ul__circle"></div></li> -->
+        <li>
+          <a href="./design.html" class="nav__link" data-type="link">design</a>
+        </li>
+        <!-- <li><div class="ul__circle"></div></li> -->
+        <li>
+          <a href="./blog.html" class="nav__link" data-type="link">blog</a>
+        </li>
+        <!-- <li><div class="ul__circle"></div></li> -->
+        <li>
+          <a href="./about.html" class="nav__link" data-type="link">about</a>
+        </li>
+      </ul>
+      </div>
+    <!-- END navbar -->
 
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <main>
+			<!-- un résumé de mon parcours -->
+			<main>
+			<section class="main__presentation__container">
+				
+				<p style="padding: 1rem"><span id="auto-type"></span></p>
+			</section>
+		</main>
 
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed("#auto-type", {
-        strings: [
-          "multi-disciplinary kid",
-          "music producer",
-          "singer",
-          "developper",
-          "designer.",
-        ],
-        typeSpeed: 40,
-        backSpeed: 20,
-        loop: true,
-        showCursor: false,
-      });
-    </script>
+    <!-- scripts -->
 
-    <script>
-      document.body.className += " fade-out";
+		<!-- Typed.JS script -->
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-      jQuery(function () {
-        jQuery("body").removeClass("fade-out");
-      });
-    </script>
+    <!-- Hide/Show SideNav -->
+		<script>
+			function showSidenav() {
+				const sidenav = document.querySelector('.sidenav');
+				sidenav.style.display = 'flex';
+			}
+
+			function hideSidenav() {
+				const sidenav = document.querySelector('.sidenav');
+				sidenav.style.display = 'none';
+			}
+		</script>
+    
+		<script>
+			var typed = new Typed('#auto-type', {
+				strings: ['a bit too early', 'what are you doing here?', 'stop reading', '.', '..', "...", 'you creep'],
+				typeSpeed: 40,
+				backSpeed: 20,
+				loop: true,
+			});
+		</script>
+
+		<!-- Fade In Script -->
+		<script>
+			document.body.className += ' fade-out';
+
+			jQuery(function () {
+				jQuery('body').removeClass('fade-out');
+			});
+		</script>
+
+		<!-- END scripts -->
   </body>
 </html>
